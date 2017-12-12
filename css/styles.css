@@ -1,0 +1,122 @@
+html {
+}
+
+body {
+	font-family:Source Sans Pro, Helvetica, Arial;
+	background:#BD2B36;
+	font-weight:200;
+}
+
+h3 {
+		font-family:Source Sans Pro, Helvetica, Arial;
+		font-weight:bold;
+		text-transform:uppercase;
+		letter-spacing:4px;
+		text-align:center;
+	}
+
+#header {
+	text-align:center;
+	background:#F5F5F5;
+}
+
+	#header h1 {
+		font-family:Roboto Slab;
+		font-weight:bold;
+		margin-bottom:0;
+		letter-spacing:3px;
+	}
+	
+	#header h5 {
+		letter-spacing:2px;
+	}
+	
+	#header h6 {
+		padding-bottom:50px;
+		margin-bottom:0;
+	}
+
+	#header a {
+		text-decoration:none;
+		color:#222222;
+	}
+
+	#header a:hover {
+		color:#BD2B36;
+	}
+
+	
+#intro {
+	background:#212121;
+	color:#fff;
+	padding-top:50px;
+}
+
+	
+	
+	#intro .row {
+		margin-top:50px;
+		margin-bottom:50px;
+	}
+	
+	#intro .row .four.columns {
+		text-align:center;
+	}
+	
+	#intro .row .four.columns h1 {
+		font-family:Roboto Slab;
+		font-weight:bold;
+		color:#BD2B36;
+		font-size:5em;
+		margin-bottom:0;
+	}
+	
+	#intro .row .four.columns h4 {
+		text-transform:uppercase;
+	}
+	
+#ba {
+	background:#F5F5F5;
+	padding-top:50px;
+	font-weight:300;
+		padding-bottom:50px;
+}
+
+#proj {
+	background:#F5F5F5;
+	padding-top:50px;
+	font-weight:300;
+		padding-bottom:50px;
+}
+
+	#proj img {
+		width:100%;
+		border:5px solid #212121;
+	}
+	
+#cert {
+	background:#BD2B36;
+	padding-top:50px;
+	font-weight:300;
+	color:#f5f5f5;
+		padding-bottom:50px;
+}
+
+	#cert .row {
+		text-align:center;
+	}
+
+	#cert img {
+		height:150px;
+	}
+	
+#contact {
+	background:#212121;
+	color:#fff;
+	padding-top:50px;
+	text-align:center;
+}
+
+#proj .customer-logos.slider img {
+	border:0px;
+}
