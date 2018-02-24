@@ -1,14 +1,10 @@
-html {
-}
-
 body {
 	font-family:Source Sans Pro, Helvetica, Arial;
 	background:#BD2B36;
-	font-weight:200;
+	font-weight:300;
 }
 
 h3 {
-		font-family:Source Sans Pro, Helvetica, Arial;
 		font-weight:bold;
 		text-transform:uppercase;
 		letter-spacing:4px;
@@ -18,33 +14,58 @@ h3 {
 #header {
 	text-align:center;
 	background:#F5F5F5;
+	padding-bottom:20px;
 }
 
-	#header h1 {
-		font-family:Roboto Slab;
+	#header #mp-logo {
+		width:150px;
+	}
+
+	#header #mp-company-name {
+		font-family:"Roboto Slab", "Bookman Old Style";
 		font-weight:bold;
-		margin-bottom:0;
-		letter-spacing:3px;
+		margin:0;
 	}
 	
-	#header h5 {
+	#header #mp-company-descriptor {
 		letter-spacing:2px;
 	}
 	
-	#header h6 {
-		padding-bottom:50px;
+	#header #mp-parent-company {
 		margin-bottom:0;
 	}
+	
+		#header #mp-parent-company span {
+			font-weight:bold;
+		}
 
 	#header a {
 		text-decoration:none;
-		color:#222222;
+		color:#222;
 	}
 
 	#header a:hover {
 		color:#BD2B36;
 	}
+	
+	#header #navbar {
+		border-top: 1px solid #E1E1E1;
+		margin:20px auto 0 auto;
+	}
 
+#header #mininavbar {
+		margin:0 auto 0 auto;
+	}
+
+	#header-title td {
+		border:none;
+		text-align:center;
+	}
+	
+	#header-title h1, h3, h6 {
+		margin:0px;
+		padding-bottom:0px;
+	}
 	
 #intro {
 	background:#212121;
@@ -52,8 +73,6 @@ h3 {
 	padding-top:50px;
 }
 
-	
-	
 	#intro .row {
 		margin-top:50px;
 		margin-bottom:50px;
@@ -75,17 +94,15 @@ h3 {
 		text-transform:uppercase;
 	}
 	
-#ba {
+#business-areas {
 	background:#F5F5F5;
 	padding-top:50px;
-	font-weight:300;
 		padding-bottom:50px;
 }
 
 #proj {
 	background:#F5F5F5;
 	padding-top:50px;
-	font-weight:300;
 		padding-bottom:50px;
 }
 
@@ -97,7 +114,6 @@ h3 {
 #cert {
 	background:#BD2B36;
 	padding-top:50px;
-	font-weight:300;
 	color:#f5f5f5;
 		padding-bottom:50px;
 }
@@ -115,7 +131,18 @@ h3 {
 	color:#fff;
 	padding-top:50px;
 	text-align:center;
+	padding-bottom:50px;
 }
+
+	#contact a {
+		color:#fff;
+		font-weight:bold;
+		text-decoration:none;
+	}
+	
+	#contact a:hover {
+		color:#BD2B36;
+	}
 
 #proj .customer-logos.slider img {
 	border:0px;
