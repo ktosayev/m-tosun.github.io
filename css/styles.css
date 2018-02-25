@@ -157,6 +157,7 @@ button[disabled] {
 	background:#212121;
 	color:#fff;
 	padding-top:50px;
+	text-align:center;
 }
 
 	#intro .row {
