@@ -132,6 +132,14 @@ button[disabled] {
 		color:#E37364;
 	}
 	
+	#page-contents form input:focus {
+		border-color: #222;
+	}
+	
+	#page-contents form textarea:focus {
+		border-color: #222;
+	}
+	
 	#page-contents form input.button{
 		background:#BD2B36;
 		border-color: #BD2B36;
