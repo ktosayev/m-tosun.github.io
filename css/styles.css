@@ -10,6 +10,12 @@ h3 {
 		letter-spacing:4px;
 		text-align:center;
 	}
+	
+button[disabled] {
+    border-color: #ccc;
+    color: #ccc;
+    text-shadow:none;
+}
 
 #header {
 	text-align:center;
@@ -20,6 +26,11 @@ h3 {
 	#header #mp-logo {
 		width:150px;
 	}
+	
+	#header #op-logo {
+		width:150px;
+		padding-right:10px;
+	}
 
 	#header #mp-company-name {
 		font-family:"Roboto Slab", "Bookman Old Style";
@@ -27,8 +38,19 @@ h3 {
 		margin:0;
 	}
 	
+	#header #op-company-name {
+		font-family:"Roboto Slab", "Bookman Old Style";
+		font-weight:bold;
+		margin-top:30px;
+		margin-bottom:5px;
+	}
+	
 	#header #mp-company-descriptor {
 		letter-spacing:2px;
+	}
+	
+	#header #op-company-descriptor {
+		margin-bottom:0;
 	}
 	
 	#header #mp-parent-company {
@@ -52,19 +74,75 @@ h3 {
 		border-top: 1px solid #E1E1E1;
 		margin:20px auto 0 auto;
 	}
-
-#header #mininavbar {
+	
+	#header #header-table {
 		margin:0 auto 0 auto;
 	}
+	
+		#header #header-table td {
+			padding:0;
+			text-align:center;
+			border-bottom:none;
+		}
+	
+	#header #nav-bar {
+		max-width:555px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-top:30px;
+	}
+	
+		#header #nav-bar a {
+			background:#BD2B36;
+			border-color: #BD2B36;
+			color: #F5F5F5;
+			width:100%;
+		}
+		
+		#header #nav-bar a:hover {
+			background:#E53935;
+			border-color: #BD2B36;
+			color: #F5F5F5;
+		}
+		
+		
+#page-contents {
+	padding:10px 0 100px 0;
+	background:#F5F5F5;
+}
 
-	#header-title td {
-		border:none;
+	#page-contents #page-title {
+		font-weight:bold;
+		text-transform:uppercase;
+		margin-top:40px;
 		text-align:center;
 	}
 	
-	#header-title h1, h3, h6 {
-		margin:0px;
-		padding-bottom:0px;
+	#page-contents #page-date{
+		text-align:center;
+	}
+
+	#page-contents a {
+		color:#BD2B36;
+		text-decoration:none;
+		font-weight:bold;
+	}
+	
+	#page-contents a:hover {
+		color:#E37364;
+	}
+	
+	#page-contents form input.button{
+		background:#BD2B36;
+		border-color: #BD2B36;
+		color: #F5F5F5;
+		width:100%;
+	}
+		
+	#page-contents form input.button:hover {
+		background:#E53935;
+		border-color: #BD2B36;
+		color: #F5F5F5;
 	}
 	
 #intro {
@@ -150,9 +228,12 @@ h3 {
 
 .map-responsive {
     overflow:hidden;
-    padding-bottom:56.25%;
+    padding-bottom:31.25%;
     position:relative;
     height:0;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .map-responsive iframe {
@@ -160,5 +241,6 @@ h3 {
     top:0;
     height:100%;
     width:100%;
+    max-height:300px;
     position:absolute;
 }
