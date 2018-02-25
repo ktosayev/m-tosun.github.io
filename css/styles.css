@@ -28,7 +28,7 @@ button[disabled] {
 	}
 	
 	#header #op-logo {
-		width:150px;
+		width:100px;
 		padding-right:10px;
 	}
 
@@ -41,8 +41,8 @@ button[disabled] {
 	#header #op-company-name {
 		font-family:"Roboto Slab", "Bookman Old Style";
 		font-weight:bold;
-		margin-top:30px;
-		margin-bottom:5px;
+		margin:0;
+		font-size:4.0rem;
 	}
 	
 	#header #mp-company-descriptor {
