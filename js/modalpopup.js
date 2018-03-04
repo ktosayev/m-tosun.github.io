@@ -6,8 +6,12 @@ var span = document.getElementsByClassName("close")[0];
 
 // Open modal on load
 $(window).on('load',function(){
-	$('#myModal').modal('show');
+	if (Cookies.get('modal_shown') == null) {
+        Cookies.set('modal_shown', 'yes', { expires: 7, path: '/' });
+        $('#myModal').modal('show');
+    }
 	});
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
