@@ -74,16 +74,10 @@ function ready(err, data) {
 
 	//Appends first bar		
 	var bars = categoryGroup.append("rect")
-		.attr("width", 1)
+		.attr("width", function(d) { return xScale(d.num); })
 		.attr("height", y0.rangeBand()/1.5 )
 		.attr("class", "g-num")
 		.attr("transform", "translate(0,4)");
-  	
-  	//Animates bars
-  	bars.transition()
-  		.duration(5000)
-  		.delay(1000)
-  		.attr("width", function(d) { return xScale(d.num); });
   
   //RESPONSIVENESS
   d3.select(window).on("resize", resized);
