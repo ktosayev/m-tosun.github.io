@@ -157,6 +157,7 @@ button[disabled] {
 	background:#212121;
 	color:#fff;
 	padding-top:50px;
+	padding-bottom:30px;
 	text-align:center;
 }
 
@@ -178,7 +179,7 @@ button[disabled] {
 	}
 	
 	#intro .row .four.columns h4 {
-		text-transform:uppercase;
+		text-transform:capitalize;
 	}
 	
 #business-areas {
@@ -187,58 +188,27 @@ button[disabled] {
 		padding-bottom:50px;
 }
 
-#vessels {
-	background:#BD2B36;
-	padding-top:50px;
-	padding-bottom:50px;
-	color:#fff;
+	#business-areas h5 {
+		font-weight:bold;
+	}
+
+#history {
+	background:#AD2B36;
+	height:200px;
+	display:none;
 }
 
-  .g-num {
-    fill:#fff;
-  }
+#vessels {
+	background:#BD2B36;
+	height:200px;
+	display:none;
+}
 
-  .g-labels {
-    font-family: 'Proxima-Nova', sans-serif;
-    fill: white;
-    font-weight: bold;
-    font-size: 13px;
-  }
-
-  .axis line {
-    fill: none;
-    stroke: #fff;
-    stroke-dasharray: 2px 3px;
-    shape-rendering: crispEdges;
-    stroke-width: 1px;
-  }
-
-  .axis text {
-    font-family: 'Proxima-Nova', sans-serif;
-    font-size: 13px;
-    pointer-events: none;
-    fill: #fff;
-  }
-
-  .domain {
-		display: none;
-  }
-
-  .y.axis text {
-    text-anchor: end !important;
-    font-size:14px;
-    fill: #fff;
-  }
-
-  .y.axis line {
-    display: none;
-  }
-
-  .g-baseline line {
-    stroke:#fff;
-    stroke-width: 1px;
-    stroke-dasharray:none;
-  }
+#containers {
+	background:#B45B36;
+	height:200px;
+	display:none;
+}
 
 #proj {
 	background:#F5F5F5;
@@ -286,6 +256,10 @@ button[disabled] {
 
 #proj .customer-logos.slider img {
 	border:0px;
+}
+
+.count:after {
+	content:"+";
 }
 
 .map-responsive {
@@ -350,3 +324,50 @@ button[disabled] {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+  .g-num {
+    fill:#fff;
+  }
+
+  .g-labels {
+    fill: white;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .axis line {
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 2px 3px;
+    shape-rendering: crispEdges;
+    stroke-width: 1px;
+  }
+
+  .axis text {
+    font-size: 13px;
+    pointer-events: none;
+    fill: #fff;
+    text-anchor: end !important;
+  }
+
+  .domain {
+		display: none;
+  }
+
+  .y.axis text {
+    text-anchor: end !important;
+    font-size:14px;
+    fill: #fff;
+  }
+
+  .y.axis line {
+    display: none;
+  }
+
+  .g-baseline line {
+    stroke:#000;
+    stroke-width: 1px;
+    stroke-dasharray:none;
+  }
+

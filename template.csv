@@ -1,9 +1,9 @@
 category,num
-Barge,12
-Tug,8
-Offshore,14
-HSLC,5
-Tanker,6
-Dredger,5
-Seismic,3
-Diving,1
+barge	,	12
+tug	,	8
+offshore support	,	14
+hslc	,	5
+tanker	,	6
+dredger	,	5
+seismic	,	3
+diving support	,	1
