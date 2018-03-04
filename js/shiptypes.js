@@ -95,14 +95,14 @@ function ready(err, data) {
 
     //Get the width of the window
     var w = document.getElementById("intro-container").offsetWidth;
-
+    
     //Change the width of the svg
     d3.select("svg")
       .attr("width", w);
 
     //Change the xScale
     xScale
-      .range([0, w - newMargin.right]);
+      .range([0, w - newMargin.right - newMargin.left]);
 
     //Update the bars
     bars
