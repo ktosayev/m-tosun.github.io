@@ -94,15 +94,15 @@ function ready(err, data) {
     var newMargin = {top: 30, right: 80, bottom: 50, left: 80};
 
     //Get the width of the window
-    var w = document.getElementsByClassName("g-chart");.offsetWidth;
-
+    var w = document.getElementById("intro-container").offsetWidth;
+    
     //Change the width of the svg
     d3.select("svg")
       .attr("width", w);
 
     //Change the xScale
     xScale
-      .range([0, w - newMargin.right]);
+      .range([0, w - newMargin.right - newMargin.left]);
 
     //Update the bars
     bars
