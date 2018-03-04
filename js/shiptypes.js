@@ -98,7 +98,7 @@ function ready(err, data) {
     
     //Change the width of the svg
     d3.select("svg")
-      .attr("width", w);
+      .attr("width", w - newMargin.right - newMargin.left);
 
     //Change the xScale
     xScale
