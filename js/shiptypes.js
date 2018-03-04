@@ -1,6 +1,6 @@
 
 //Margin conventions
-var margin = {top: 30, right: 50, bottom: 50, left: 80};
+var margin = {top: 30, right: 80, bottom: 50, left: 80};
 
 var widther = document.getElementById("intro-container").offsetWidth
 
