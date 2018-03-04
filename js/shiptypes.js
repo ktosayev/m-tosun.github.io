@@ -37,7 +37,7 @@ var xAxis = d3.svg.axis()
 	.ticks(numTicks(width)); 
 
 //Loads the data
-d3.csv("https://raw.githubusercontent.com/ktosayev/m-tosun.github.io/master/template.csv", ready);
+d3.csv("../template.csv", ready);
 
 function ready(err, data) {
 
