@@ -1,11 +1,11 @@
 
 //Margin conventions
-var margin = {top: 30, right: 80, bottom: 50, left: 80};
+var margin = {top: 30, right: 20, bottom: 20, left: 80};
 
 var widther = document.getElementById("ship-types-chart").offsetWidth
 
 var width = widther - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+		height = 400 - margin.top - margin.bottom;
 
 //Appends the svg to the chart-container div
 var svg = d3.select(".g-chart").append("svg")
@@ -33,8 +33,7 @@ var xAxis = d3.svg.axis()
 	.scale(xScale)
 	.orient("bottom")
 	.tickFormat(function(d) {return d; })
-	.tickSize(height)
-	.ticks(numTicks(width)); 
+	.tickSize(height);
 
 //Loads the data
 d3.csv("../template.csv", ready);
@@ -62,7 +61,7 @@ function ready(err, data) {
 		.attr("class", "x axis")
 		.call(xAxis);	
 
-  //Binds the data to the bars    	
+	//Binds the data to the bars			
 	var categoryGroup = svg.selectAll(".g-category-group")
 		.data(data)
 		.enter()
@@ -78,47 +77,31 @@ function ready(err, data) {
 		.attr("height", y0.rangeBand()/1.5 )
 		.attr("class", "g-num")
 		.attr("transform", "translate(0,4)");
-  
-  //RESPONSIVENESS
-  d3.select(window).on("resize", resized);
+	
+	//RESPONSIVENESS
+	d3.select(window).on("resize", resized);
 
-  function resized() {
+	function resized() {
+		//Margins
+		var margin = {top: 30, right: 20, bottom: 20, left: 80};
 
-    //new margin
-    var newMargin = {top: 30, right: 80, bottom: 50, left: 80};
+		//Get width
+		var widther = document.getElementById("ship-types-chart").offsetWidth
 
-    //Get the width of the window
-    var w = document.getElementById("ship-types-chart").offsetWidth;
+		//Adjust width variable
+		var width = widther - margin.left - margin.right;
 
-    //Change the width of the svg
-    d3.select("svg")
-      .attr("width", w);
+		//Change width
+		var svg = d3.select("svg").attr("width", width + margin.left + margin.right);
 
-    //Change the xScale
-    xScale.range([0, w - newMargin.right]);
+		//Change the xScale
+		xScale.range([0,width]);
 
-    //Update the bars
-    bars.attr("width", function(d) { return xScale(d.num); });
+		//Update the bars
+		bars.attr("width", function(d) { return xScale(d.num); });
 
-    //Updates xAxis
-    xAxisGroup.call(xAxis);   
+		//Updates xAxis
+		xAxisGroup.call(xAxis);
 
-    //Updates ticks
-    xAxis.scale(xScale)
-    	 .ticks(numTicks(w - newMargin.right));
-
-  };
-
-}
-
-//Determines number of ticks base on width
-function numTicks(widther) {
-  if (widther <= 400) {
-    return 4
-    console.log("return 4")
-  }
-  else {
-    return 10
-    console.log("return 5")
-  }
+	};
 }
