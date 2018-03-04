@@ -95,27 +95,23 @@ function ready(err, data) {
 
     //Get the width of the window
     var w = document.getElementById("intro-container").offsetWidth;
-    
+
     //Change the width of the svg
     d3.select("svg")
-      .attr("width", w - newMargin.right - newMargin.left);
+      .attr("width", w);
 
     //Change the xScale
-    xScale
-      .range([0, w - newMargin.right - newMargin.left]);
+    xScale.range([0, w - newMargin.right]);
 
     //Update the bars
-    bars
-      .attr("width", function(d) { return xScale(d.num); });
+    bars.attr("width", function(d) { return xScale(d.num); });
 
     //Updates xAxis
-    xAxisGroup
-      .call(xAxis);   
+    xAxisGroup.call(xAxis);   
 
     //Updates ticks
-    xAxis
-      .scale(xScale)
-      .ticks(numTicks(w));
+    xAxis.scale(xScale)
+    	 .ticks(numTicks(w - newMargin.right));
 
   };
 
