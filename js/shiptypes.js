@@ -33,7 +33,8 @@ var xAxis = d3.svg.axis()
 	.scale(xScale)
 	.orient("bottom")
 	.tickFormat(function(d) {return d; })
-	.tickSize(height);
+	.tickSize(height)
+	.ticks(2);
 
 //Loads the data
 d3.csv("../template.csv", ready);
