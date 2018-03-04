@@ -192,24 +192,6 @@ button[disabled] {
 		font-weight:bold;
 	}
 
-#history {
-	background:#AD2B36;
-	height:200px;
-	display:none;
-}
-
-#vessels {
-	background:#BD2B36;
-	height:200px;
-	display:none;
-}
-
-#containers {
-	background:#B45B36;
-	height:200px;
-	display:none;
-}
-
 #proj {
 	background:#F5F5F5;
 	padding-top:50px;
