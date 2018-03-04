@@ -2,7 +2,7 @@
 //Margin conventions
 var margin = {top: 30, right: 80, bottom: 50, left: 80};
 
-var widther = document.getElementById("intro-container").offsetWidth
+var widther = document.getElementById("ship-types-chart").offsetWidth
 
 var width = widther - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
@@ -94,7 +94,7 @@ function ready(err, data) {
     var newMargin = {top: 30, right: 80, bottom: 50, left: 80};
 
     //Get the width of the window
-    var w = document.getElementById("intro-container").offsetWidth;
+    var w = document.getElementById("ship-types-chart").offsetWidth;
 
     //Change the width of the svg
     d3.select("svg")
