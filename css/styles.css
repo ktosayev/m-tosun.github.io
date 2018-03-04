@@ -348,7 +348,6 @@ button[disabled] {
     font-size: 13px;
     pointer-events: none;
     fill: #fff;
-    text-anchor: end !important;
   }
 
   .domain {
